@@ -3,35 +3,44 @@ import { Star } from "lucide-react";
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
-      {/* Gradient Background Effect */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(255,87,87,0.1)_0%,transparent_70%)]" />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50 via-white to-primary/5">
+      {/* Modern Gradient Background Effect */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(239,68,68,0.08)_0%,transparent_50%)] opacity-60" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(59,130,246,0.06)_0%,transparent_50%)] opacity-40" />
       
-      {/* Decorative Lines */}
-      <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-20 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent transform -rotate-12" />
-        <div className="absolute top-40 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent transform rotate-12" />
-        <div className="absolute top-60 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent transform -rotate-12" />
+      {/* Animated Decorative Elements */}
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-20 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent transform -rotate-12 animate-pulse" />
+        <div className="absolute top-40 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500/20 to-transparent transform rotate-12" />
+        <div className="absolute top-60 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent transform -rotate-12" />
+      </div>
+      
+      {/* Floating orbs */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-primary/5 rounded-full blur-xl animate-pulse" />
+        <div className="absolute bottom-1/4 right-1/4 w-40 h-40 bg-blue-500/5 rounded-full blur-2xl animate-pulse" style={{animationDelay: '1s'}} />
       </div>
 
       <div className="container mx-auto px-4 lg:px-8 pt-32 pb-20 relative z-10">
         <div className="max-w-5xl mx-auto text-center space-y-8">
           {/* Google Reviews Badge */}
-          <div className="flex items-center justify-center gap-2 mb-6">
+          <div className="inline-flex items-center gap-3 mb-8 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full shadow-lg border border-gray-100/50 hover:shadow-xl transition-all duration-300">
             <div className="flex gap-1">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400 animate-pulse" style={{animationDelay: `${i * 100}ms`}} />
               ))}
             </div>
-            <span className="text-sm font-medium text-muted-foreground">Google Reviews</span>
+            <span className="text-sm font-semibold bg-gradient-to-r from-gray-700 to-gray-900 bg-clip-text text-transparent">5.0 Google Reviews</span>
           </div>
 
           {/* Main Headline */}
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight tracking-tight px-4 sm:px-0">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-[1.1] tracking-tight px-4 sm:px-0 text-center">
             Transform Your Ideas Into{" "}
-            <span className="text-primary">Compelling Content</span>
+            <span className="bg-gradient-to-r from-primary via-primary to-red-600 bg-clip-text text-transparent animate-pulse">
+              Compelling Content
+            </span>
             <br className="hidden sm:block" />
-            <span className="block sm:inline"> That Drives Real Results</span>
+            <span className="block sm:inline bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent"> That Drives Real Results</span>
           </h1>
 
           {/* Subheadline */}
@@ -48,13 +57,23 @@ export const HeroSection = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="pt-6 px-4 sm:px-0">
-            <Button 
-              size="lg" 
-              className="w-full sm:w-auto rounded-full px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg font-semibold shadow-xl hover:shadow-2xl transition-all transform hover:scale-105"
-            >
-              Start Your Project
-            </Button>
+          <div className="pt-8 px-4 sm:px-0">
+            <div className="flex flex-col sm:flex-row items-center gap-4 justify-center">
+              <Button 
+                size="lg" 
+                className="w-full sm:w-auto rounded-2xl bg-gradient-to-r from-primary to-red-600 hover:from-primary/90 hover:to-red-600/90 px-8 py-6 text-lg font-bold shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105 border-0 group relative overflow-hidden"
+              >
+                <span className="relative z-10">Start Your Project</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </Button>
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="w-full sm:w-auto rounded-2xl border-2 border-gray-200 hover:border-primary/50 bg-white/80 backdrop-blur-sm px-6 py-6 text-base font-semibold hover:bg-white transition-all duration-300 hover:scale-105"
+              >
+                View Our Work
+              </Button>
+            </div>
           </div>
 
           {/* Tools Slider */}
