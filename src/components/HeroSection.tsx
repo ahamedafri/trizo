@@ -27,43 +27,43 @@ export const HeroSection = () => {
           </div>
 
           {/* Main Headline */}
-          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-black leading-tight tracking-tight">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight tracking-tight px-4 sm:px-0">
             Transform Your Ideas Into{" "}
             <span className="text-primary">Compelling Content</span>
-            <br />
-            That Drives Real Results
+            <br className="hidden sm:block" />
+            <span className="block sm:inline"> That Drives Real Results</span>
           </h1>
 
           {/* Subheadline */}
-          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4 sm:px-6 md:px-0">
             From YouTube channels to complete brand identities, we create authentic content 
             that connects with global audiences while staying true to your values and vision.
           </p>
 
           {/* Brand Tagline */}
-          <div className="pt-4">
-            <p className="text-sm font-medium text-primary/80 tracking-wide uppercase">
+          <div className="pt-4 px-4 sm:px-0">
+            <p className="text-xs sm:text-sm font-medium text-primary/80 tracking-wide uppercase">
               Creative Excellence • Authentic Storytelling • Global Impact
             </p>
           </div>
 
           {/* CTA Button */}
-          <div className="pt-6">
+          <div className="pt-6 px-4 sm:px-0">
             <Button 
               size="lg" 
-              className="rounded-full px-8 py-6 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all transform hover:scale-105"
+              className="w-full sm:w-auto rounded-full px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg font-semibold shadow-xl hover:shadow-2xl transition-all transform hover:scale-105"
             >
               Start Your Project
             </Button>
           </div>
 
           {/* Tools Slider */}
-          <div className="pt-20">
-            <p className="text-base font-medium text-muted-foreground mb-12 text-center">Powered by industry-leading tools</p>
-            <div className="relative overflow-hidden bg-gradient-to-r from-transparent via-white/5 to-transparent rounded-2xl md:rounded-3xl py-6 md:py-8 px-4">
+          <div className="pt-16 md:pt-20">
+            <p className="text-sm md:text-base font-medium text-muted-foreground mb-8 md:mb-12 text-center px-4">Powered by industry-leading tools</p>
+            <div className="relative w-full overflow-hidden bg-gradient-to-r from-transparent via-white/5 to-transparent rounded-xl md:rounded-2xl lg:rounded-3xl py-4 md:py-6 lg:py-8">
               <div className="flex animate-slide-left">
                 {/* First set of logos */}
-                <div className="flex min-w-full justify-center items-center space-x-3 sm:space-x-4 md:space-x-6">
+                <div className="flex min-w-full justify-start md:justify-center items-center space-x-4 md:space-x-6 lg:space-x-8 pl-4 md:pl-0">
                   {[
                     { name: 'YouTube Studio', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg', color: '#FF0000' },
                     { name: 'Adobe Premiere', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/adobepremierepro.svg', color: '#9999FF' },
@@ -76,17 +76,17 @@ export const HeroSection = () => {
                   ].map((tool, index) => (
                     <div 
                       key={index}
-                      className="flex-shrink-0 w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-white rounded-xl md:rounded-2xl flex items-center justify-center shadow-md md:shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 md:hover:scale-110 border border-gray-100 md:border-2 md:border-gray-50 backdrop-blur-sm"
+                      className="flex-shrink-0 w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-white rounded-lg md:rounded-xl lg:rounded-2xl flex items-center justify-center shadow-sm md:shadow-md lg:shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-gray-100 md:border-gray-200 backdrop-blur-sm"
                     >
                       <div 
-                        className="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12"
+                        className="w-6 h-6 sm:w-7 sm:h-7 md:w-10 md:h-10 lg:w-12 lg:h-12"
                         style={{ backgroundColor: tool.color, mask: `url(${tool.logo}) no-repeat center`, maskSize: 'contain', WebkitMask: `url(${tool.logo}) no-repeat center`, WebkitMaskSize: 'contain' }}
                       />
                     </div>
                   ))}
                 </div>
                 {/* Duplicate set for seamless loop */}
-                <div className="flex min-w-full justify-center items-center space-x-3 sm:space-x-4 md:space-x-6">
+                <div className="flex min-w-full justify-start md:justify-center items-center space-x-4 md:space-x-6 lg:space-x-8 pl-4 md:pl-0">
                   {[
                     { name: 'YouTube Studio', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg', color: '#FF0000' },
                     { name: 'Adobe Premiere', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/adobepremierepro.svg', color: '#9999FF' },
@@ -99,10 +99,10 @@ export const HeroSection = () => {
                   ].map((tool, index) => (
                     <div 
                       key={`duplicate-${index}`}
-                      className="flex-shrink-0 w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-white rounded-xl md:rounded-2xl flex items-center justify-center shadow-md md:shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 md:hover:scale-110 border border-gray-100 md:border-2 md:border-gray-50 backdrop-blur-sm"
+                      className="flex-shrink-0 w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-white rounded-lg md:rounded-xl lg:rounded-2xl flex items-center justify-center shadow-sm md:shadow-md lg:shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-gray-100 md:border-gray-200 backdrop-blur-sm"
                     >
                       <div 
-                        className="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12"
+                        className="w-6 h-6 sm:w-7 sm:h-7 md:w-10 md:h-10 lg:w-12 lg:h-12"
                         style={{ backgroundColor: tool.color, mask: `url(${tool.logo}) no-repeat center`, maskSize: 'contain', WebkitMask: `url(${tool.logo}) no-repeat center`, WebkitMaskSize: 'contain' }}
                       />
                     </div>
