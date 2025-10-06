@@ -60,10 +60,10 @@ export const HeroSection = () => {
           {/* Tools Slider */}
           <div className="pt-16 md:pt-20">
             <p className="text-sm md:text-base font-medium text-muted-foreground mb-8 md:mb-12 text-center px-4">Powered by industry-leading tools</p>
-            <div className="relative w-full overflow-hidden bg-gradient-to-r from-transparent via-white/5 to-transparent rounded-xl md:rounded-2xl lg:rounded-3xl py-4 md:py-6 lg:py-8">
-              <div className="flex animate-slide-left">
+            <div className="relative w-full overflow-hidden bg-gradient-to-r from-transparent via-white/5 to-transparent rounded-xl md:rounded-2xl lg:rounded-3xl py-6 md:py-8">
+              <div className="flex animate-slide-left gap-6 md:gap-8 lg:gap-10">
                 {/* First set of logos */}
-                <div className="flex min-w-full justify-start md:justify-center items-center space-x-4 md:space-x-6 lg:space-x-8 pl-4 md:pl-0">
+                <div className="flex items-center gap-6 md:gap-8 lg:gap-10 flex-shrink-0">
                   {[
                     { name: 'YouTube Studio', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg', color: '#FF0000' },
                     { name: 'Adobe Premiere', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/adobepremierepro.svg', color: '#9999FF' },
@@ -76,17 +76,17 @@ export const HeroSection = () => {
                   ].map((tool, index) => (
                     <div 
                       key={index}
-                      className="flex-shrink-0 w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-white rounded-lg md:rounded-xl lg:rounded-2xl flex items-center justify-center shadow-sm md:shadow-md lg:shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-gray-100 md:border-gray-200 backdrop-blur-sm"
+                      className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 bg-white rounded-lg md:rounded-xl lg:rounded-2xl flex items-center justify-center shadow-sm md:shadow-md lg:shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-gray-100 md:border-gray-200 backdrop-blur-sm"
                     >
                       <div 
-                        className="w-6 h-6 sm:w-7 sm:h-7 md:w-10 md:h-10 lg:w-12 lg:h-12"
+                        className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14"
                         style={{ backgroundColor: tool.color, mask: `url(${tool.logo}) no-repeat center`, maskSize: 'contain', WebkitMask: `url(${tool.logo}) no-repeat center`, WebkitMaskSize: 'contain' }}
                       />
                     </div>
                   ))}
                 </div>
                 {/* Duplicate set for seamless loop */}
-                <div className="flex min-w-full justify-start md:justify-center items-center space-x-4 md:space-x-6 lg:space-x-8 pl-4 md:pl-0">
+                <div className="flex items-center gap-6 md:gap-8 lg:gap-10 flex-shrink-0">
                   {[
                     { name: 'YouTube Studio', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg', color: '#FF0000' },
                     { name: 'Adobe Premiere', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/adobepremierepro.svg', color: '#9999FF' },
@@ -99,10 +99,10 @@ export const HeroSection = () => {
                   ].map((tool, index) => (
                     <div 
                       key={`duplicate-${index}`}
-                      className="flex-shrink-0 w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-white rounded-lg md:rounded-xl lg:rounded-2xl flex items-center justify-center shadow-sm md:shadow-md lg:shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-gray-100 md:border-gray-200 backdrop-blur-sm"
+                      className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 bg-white rounded-lg md:rounded-xl lg:rounded-2xl flex items-center justify-center shadow-sm md:shadow-md lg:shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-gray-100 md:border-gray-200 backdrop-blur-sm"
                     >
                       <div 
-                        className="w-6 h-6 sm:w-7 sm:h-7 md:w-10 md:h-10 lg:w-12 lg:h-12"
+                        className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14"
                         style={{ backgroundColor: tool.color, mask: `url(${tool.logo}) no-repeat center`, maskSize: 'contain', WebkitMask: `url(${tool.logo}) no-repeat center`, WebkitMaskSize: 'contain' }}
                       />
                     </div>
