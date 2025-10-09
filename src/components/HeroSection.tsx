@@ -35,24 +35,23 @@ export const HeroSection = () => {
 
           {/* Main Headline */}
           <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-[1.1] tracking-tight px-4 sm:px-0 text-center">
-            Transform Your Ideas Into{" "}
-            <span className="bg-gradient-to-r from-primary via-primary to-red-600 bg-clip-text text-transparent animate-pulse">
-              Compelling Content
+            <span className="bg-gradient-to-r from-primary via-primary to-red-600 bg-clip-text text-transparent">
+              YouTube Growth.
             </span>
             <br className="hidden sm:block" />
-            <span className="block sm:inline bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent"> That Drives Real Results</span>
+            <span className="block sm:inline bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent"> Made Simple.</span>
           </h1>
 
           {/* Subheadline */}
-          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4 sm:px-6 md:px-0">
-            From YouTube channels to complete brand identities, we create authentic content 
-            that connects with global audiences while staying true to your values and vision.
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4 sm:px-6 md:px-0">
+            Helping creators get more views, subscribers, and income - no fluff. 
+            We make videos that get noticed without the hours of work.
           </p>
 
           {/* Brand Tagline */}
           <div className="pt-4 px-4 sm:px-0">
             <p className="text-xs sm:text-sm font-medium text-primary/80 tracking-wide uppercase">
-              Creative Excellence • Authentic Storytelling • Global Impact
+              YouTube Growth • Website Development • SEO Optimization
             </p>
           </div>
 
@@ -63,7 +62,7 @@ export const HeroSection = () => {
                 size="lg" 
                 className="w-full sm:w-auto rounded-2xl bg-gradient-to-r from-primary to-red-600 hover:from-primary/90 hover:to-red-600/90 px-8 py-6 text-lg font-bold shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105 border-0 group relative overflow-hidden"
               >
-                <span className="relative z-10">Start Your Project</span>
+                <span className="relative z-10">Grow My Channel</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </Button>
               <Button 
@@ -71,7 +70,7 @@ export const HeroSection = () => {
                 size="lg" 
                 className="w-full sm:w-auto rounded-2xl border-2 border-gray-200 hover:border-primary/50 bg-white/80 backdrop-blur-sm px-6 py-6 text-base font-semibold hover:bg-white transition-all duration-300 hover:scale-105"
               >
-                View Our Work
+                See Our Results
               </Button>
             </div>
           </div>

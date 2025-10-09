@@ -30,18 +30,18 @@ export const CTASection = () => {
               {/* Headline */}
               <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
                 <span className="bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
-                  Ready to Transform 
+                  Ready to Grow Your 
                 </span>
                 <br />
                 <span className="bg-gradient-to-r from-primary to-red-600 bg-clip-text text-transparent">
-                  Your Content?
+                  YouTube Channel?
                 </span>
               </h2>
               
               {/* Description */}
               <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-                Join hundreds of creators and businesses who trust Trizo Media to bring their vision to life. 
-                Let's create content that not only looks amazing but drives real growth for your brand.
+                Join hundreds of creators who trust Trizo Media to grow their channels. 
+                Get more views, subscribers, and income with our proven YouTube growth strategies.
               </p>
               
               {/* CTA Buttons */}
@@ -51,7 +51,7 @@ export const CTASection = () => {
                   className="w-full sm:w-auto text-lg px-8 py-6 rounded-2xl bg-gradient-to-r from-primary to-red-600 hover:from-primary/90 hover:to-red-600/90 shadow-2xl hover:shadow-3xl hover:scale-105 transition-all duration-300 border-0 group relative overflow-hidden"
                 >
                   <Calendar className="mr-2 h-5 w-5" />
-                  <span className="relative z-10">Start Your Project Today</span>
+                  <span className="relative z-10">Start Growing Today</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </Button>
                 

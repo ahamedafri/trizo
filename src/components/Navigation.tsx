@@ -20,14 +20,14 @@ export const Navigation = () => {
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 sm:gap-3 group">
-            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl overflow-hidden bg-gradient-to-br from-primary/10 to-primary/20 shadow-lg border border-primary/10 transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-xl">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl overflow-hidden bg-white shadow-md border border-gray-200 transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg">
               <img 
                 src="/assets/trizo-media-logo.png" 
                 alt="Trizo Media"
                 className="w-full h-full object-cover"
               />
             </div>
-            <span className="text-lg sm:text-xl font-display font-black bg-gradient-to-r from-gray-900 to-primary bg-clip-text text-transparent group-hover:from-primary group-hover:to-primary/80 transition-all duration-300">
+            <span className="text-lg sm:text-xl font-bold text-gray-900 group-hover:text-primary transition-colors duration-300">
               Trizo Media
             </span>
           </a>
