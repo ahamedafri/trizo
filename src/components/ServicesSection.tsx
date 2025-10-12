@@ -22,6 +22,12 @@ export const ServicesSection = () => {
       description: "Search engine optimization that gets your content and website ranked higher on Google, driving organic traffic and growth",
       category: "seo"
     },
+    {
+      icon: PenTool,
+      title: "YouTube Ads Management & Growth Services",
+      description: "Get targeted YouTube Ads that boost your brand awareness, traffic, leads, and sales. With 7+ years of experience in Google Video Ads and YouTube Campaign Management, we help your business reach the right audience at the lowest cost.",
+      category: "ads"
+    },
   ];
 
   return (
@@ -41,7 +47,7 @@ export const ServicesSection = () => {
         </div>
 
         {/* Main Services */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
           {services.map((service, index) => {
             const Icon = service.icon;
             const getServiceColor = (category) => {
@@ -49,6 +55,7 @@ export const ServicesSection = () => {
                 case 'youtube': return 'from-red-500/10 to-primary/20';
                 case 'websites': return 'from-blue-500/10 to-purple-500/20';
                 case 'seo': return 'from-green-500/10 to-emerald-500/20';
+                case 'ads': return 'from-orange-500/10 to-yellow-500/20';
                 default: return 'from-primary/10 to-primary/20';
               }
             };
@@ -58,6 +65,7 @@ export const ServicesSection = () => {
                 case 'youtube': return 'text-red-600';
                 case 'websites': return 'text-blue-600';
                 case 'seo': return 'text-green-600';
+                case 'ads': return 'text-orange-600';
                 default: return 'text-primary';
               }
             };

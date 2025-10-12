@@ -44,14 +44,13 @@ export const HeroSection = () => {
 
           {/* Subheadline */}
           <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4 sm:px-6 md:px-0">
-            Helping creators get more views, subscribers, and income - no fluff. 
-            We make videos that get noticed without the hours of work.
+            Helping creators get more views, subscribers, and income - no fluff.
           </p>
 
           {/* Brand Tagline */}
           <div className="pt-4 px-4 sm:px-0">
             <p className="text-xs sm:text-sm font-medium text-primary/80 tracking-wide uppercase">
-              YouTube Growth • Website Development • SEO Optimization
+              YouTube Growth • Website Development • SEO Optimization • YouTube Ads Management
             </p>
           </div>
 
